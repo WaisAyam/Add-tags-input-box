@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #ccc;
+}
+.container{
+    background: rgb(211, 198, 10);
+    width: 490px;
+    border-radius: 10px;
+    padding: 10px 25px 20px;
+}
+.container .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #96943b;
+}
+.container .heading .fas{
+    font-size: 19px;
+}
+.container .heading p{
+    font-size: 19px;
+    font-weight: 600;
+}
+.container .heading h2{
+    margin-left: -160px;
+    font-size: 21px;
+    font-weight: 600;
+}
+.container .heading span{
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.container .content{
+    margin: 30px 10px;
+}
+
+.content ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 12px 0;
+    border: 1px solid #96943b;
+    border-radius: 10px;
+    background: black;
+    color: #fff;
+}
+.content ul li{
+    list-style-type: none;
+    padding: 5px 8px 5px 10px;
+    margin: 4px 3px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.content ul li i{
+    height: 20px;
+    width: 20px;
+    background: white;
+    color: #000;
+    border-radius: 50%;
+    margin-left: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.content ul input {
+    border: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    flex: 1;
+    padding: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+.container :where(li, li i){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .content button{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+    transition: all .5s;
+}
+.container .content button:hover{
+    background: #fff;
+    color: #000;
+}
